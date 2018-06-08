@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		849CB47E20CABDA600CEEB70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CB47D20CABDA600CEEB70 /* main.m */; };
+		849CB48620CAD8D900CEEB70 /* House.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CB48520CAD8D900CEEB70 /* House.m */; };
+		849CB48920CAF5E000CEEB70 /* Bedroom.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CB48820CAF5E000CEEB70 /* Bedroom.m */; };
+		849CB48C20CAFE2100CEEB70 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CB48B20CAFE2100CEEB70 /* Book.m */; };
+		849CB48F20CAFE2E00CEEB70 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CB48E20CAFE2E00CEEB70 /* Person.m */; };
+		849CB49220CB049000CEEB70 /* RPSGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CB49120CB049000CEEB70 /* RPSGame.m */; };
+		849CB49520CB049F00CEEB70 /* RPSTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CB49420CB049F00CEEB70 /* RPSTurn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,18 @@
 /* Begin PBXFileReference section */
 		849CB47A20CABDA600CEEB70 /* House */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = House; sourceTree = BUILT_PRODUCTS_DIR; };
 		849CB47D20CABDA600CEEB70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		849CB48420CAD8D900CEEB70 /* House.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = House.h; sourceTree = "<group>"; };
+		849CB48520CAD8D900CEEB70 /* House.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = House.m; sourceTree = "<group>"; };
+		849CB48720CAF5E000CEEB70 /* Bedroom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bedroom.h; sourceTree = "<group>"; };
+		849CB48820CAF5E000CEEB70 /* Bedroom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bedroom.m; sourceTree = "<group>"; };
+		849CB48A20CAFE2100CEEB70 /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		849CB48B20CAFE2100CEEB70 /* Book.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		849CB48D20CAFE2E00CEEB70 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		849CB48E20CAFE2E00CEEB70 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		849CB49020CB049000CEEB70 /* RPSGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSGame.h; sourceTree = "<group>"; };
+		849CB49120CB049000CEEB70 /* RPSGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPSGame.m; sourceTree = "<group>"; };
+		849CB49320CB049F00CEEB70 /* RPSTurn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSTurn.h; sourceTree = "<group>"; };
+		849CB49420CB049F00CEEB70 /* RPSTurn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPSTurn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +59,9 @@
 		849CB47120CABDA600CEEB70 = {
 			isa = PBXGroup;
 			children = (
+				849CB49720CB04C400CEEB70 /* Book */,
 				849CB47C20CABDA600CEEB70 /* House */,
+				849CB49620CB04AF00CEEB70 /* RPS */,
 				849CB47B20CABDA600CEEB70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,8 +78,34 @@
 			isa = PBXGroup;
 			children = (
 				849CB47D20CABDA600CEEB70 /* main.m */,
+				849CB48420CAD8D900CEEB70 /* House.h */,
+				849CB48520CAD8D900CEEB70 /* House.m */,
+				849CB48720CAF5E000CEEB70 /* Bedroom.h */,
+				849CB48820CAF5E000CEEB70 /* Bedroom.m */,
 			);
 			path = House;
+			sourceTree = "<group>";
+		};
+		849CB49620CB04AF00CEEB70 /* RPS */ = {
+			isa = PBXGroup;
+			children = (
+				849CB49020CB049000CEEB70 /* RPSGame.h */,
+				849CB49120CB049000CEEB70 /* RPSGame.m */,
+				849CB49320CB049F00CEEB70 /* RPSTurn.h */,
+				849CB49420CB049F00CEEB70 /* RPSTurn.m */,
+			);
+			path = RPS;
+			sourceTree = "<group>";
+		};
+		849CB49720CB04C400CEEB70 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				849CB48A20CAFE2100CEEB70 /* Book.h */,
+				849CB48B20CAFE2100CEEB70 /* Book.m */,
+				849CB48D20CAFE2E00CEEB70 /* Person.h */,
+				849CB48E20CAFE2E00CEEB70 /* Person.m */,
+			);
+			path = Book;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849CB48C20CAFE2100CEEB70 /* Book.m in Sources */,
+				849CB48620CAD8D900CEEB70 /* House.m in Sources */,
+				849CB49520CB049F00CEEB70 /* RPSTurn.m in Sources */,
+				849CB48F20CAFE2E00CEEB70 /* Person.m in Sources */,
+				849CB48920CAF5E000CEEB70 /* Bedroom.m in Sources */,
 				849CB47E20CABDA600CEEB70 /* main.m in Sources */,
+				849CB49220CB049000CEEB70 /* RPSGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
