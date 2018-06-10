@@ -9,11 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "RPSTurn.h"
 
+
 @interface RPSGame : NSObject
 
 @property (nonatomic) RPSTurn* firstTurn;
 @property (nonatomic) RPSTurn* secondTurn;
 
--(instancetype)initTheGame: (RPSTurn*)firstTurn secondTurn: (RPSTurn*)secondTurn;
+-(instancetype)initWithFirstTurn: (RPSTurn*)firstTurn secondTurn: (RPSTurn*)secondTurn;
+-(RPSGame*)winner;
+-(RPSGame*)loser;
+-(NSString*)resultString: (RPSGame*)game;
 
 @end

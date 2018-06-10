@@ -8,15 +8,26 @@
 
 #import "RPSGame.h"
 
+
 @implementation RPSGame
 
--(instancetype)initTheGame: (RPSTurn*)firstTurn secondTurn: (RPSTurn*)secondTurn{
+-(instancetype)initWithFirstTurn: (RPSTurn*)firstTurn
+                secondTurn: (RPSTurn*)secondTurn{
     if(self=[super init]){
         _firstTurn=firstTurn;
         _secondTurn=secondTurn;
     }
     return self;
-    
 }
+
+-(RPSTurn*)winner{
+    return [self.firstTurn defeats:self.secondTurn] ? self.firstTurn : self.secondTurn;
+}
+
+-(RPSTurn*)loser{
+    return [self.firstTurn defeats:self.secondTurn] ? self.secondTurn : self.firstTurn;
+}
+
+
 
 @end
